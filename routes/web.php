@@ -16,12 +16,14 @@
 //});
 
 Route::get('/', 'IndexController@index');
-Route::resource('/category', 'CategoryController');
 
-Route::resource('/event', 'EventController');
-Route::resource('/listings', 'ListingController');
+Route::resources([
+    'category' => 'CategoryController',
+    'event' => 'EventController',
+    'listings' => 'ListingsController'
+]);
+
 Route::get('/dashboard/{id}', 'DashboardController@profile');
-
 
 Route::group(['prefix' => 'admin'], function () {
     Voyager::routes();

@@ -28,6 +28,7 @@ class IndexController extends Controller
             'listings' => $listings,
             'events' => $events,
         ]);
+
     }
 
     /**
