@@ -26,7 +26,7 @@
     <nav class="navbar navbar-expand-md navbar-light navbar-laravel">
         <div class="container">
             <a class="navbar-brand" href="{{ url('/') }}">
-                <img src="/dist/images/logo_bg_color.png" height="20px">
+                <img src="img/images/logo_bg_color.png" height="20px">
             </a>
             <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="{{ __('Toggle navigation') }}">
                 <span class="navbar-toggler-icon"></span>
@@ -85,53 +85,53 @@
                     <div class="col-12 col-sm-6 col-lg-3 mb-4 mb-lg-0">
                         <h5 class="footer-head">Useful Links</h5>
                         <ul class="list-unstyled footer-links lis-line-height-2_5">
-                            <li><A href="#"><i class="fa fa-angle-right pr-1"></i> Add Listing</A></li>
-                            <li><A href="#"><i class="fa fa-angle-right pr-1"></i> Sign In</A></li>
-                            <li><A href="#"><i class="fa fa-angle-right pr-1"></i> Register</A></li>
-                            <li><A href="#"><i class="fa fa-angle-right pr-1"></i> Pricing</A></li>
-                            <li><A href="#"><i class="fa fa-angle-right pr-1"></i> Contact Us</A></li>
+                            <li><a href="#"><i class="fa fa-angle-right pr-1"></i> Add Listing</a></li>
+                            <li><a href="#"><i class="fa fa-angle-right pr-1"></i> Sign In</a></li>
+                            <li><a href="#"><i class="fa fa-angle-right pr-1"></i> Register</a></li>
+                            <li><a href="#"><i class="fa fa-angle-right pr-1"></i> Pricing</a></li>
+                            <li><a href="#"><i class="fa fa-angle-right pr-1"></i> Contact Us</a></li>
                         </ul>
                     </div>
                     <div class="col-12 col-sm-6 col-lg-3 mb-4 mb-lg-0">
                         <h5 class="footer-head">My Account</h5>
                         <ul class="list-unstyled footer-links lis-line-height-2_5">
-                            <li><A href="#"><i class="fa fa-angle-right pr-1"></i> Dashboard</A></li>
-                            <li><A href="#"><i class="fa fa-angle-right pr-1"></i> Profile</A></li>
-                            <li><A href="#"><i class="fa fa-angle-right pr-1"></i> My Listing</A></li>
-                            <li><A href="#"><i class="fa fa-angle-right pr-1"></i> Favorites</A></li>
+                            <li><a href="#"><i class="fa fa-angle-right pr-1"></i> Dashboard</a></li>
+                            <li><a href="#"><i class="fa fa-angle-right pr-1"></i> Profile</a></li>
+                            <li><a href="#"><i class="fa fa-angle-right pr-1"></i> My Listing</a></li>
+                            <li><a href="#"><i class="fa fa-angle-right pr-1"></i> Favorites</a></li>
                         </ul>
                     </div>
                     <div class="col-12 col-sm-6 col-lg-3 mb-4 mb-md-0">
                         <h5 class="footer-head">Pages</h5>
                         <ul class="list-unstyled footer-links lis-line-height-2_5">
-                            <li><A href="#"><i class="fa fa-angle-right pr-1"></i> Blog</A></li>
-                            <li><A href="#"><i class="fa fa-angle-right pr-1"></i> Our Partners</A></li>
-                            <li><A href="#"><i class="fa fa-angle-right pr-1"></i> How It Work</A></li>
-                            <li><A href="#"><i class="fa fa-angle-right pr-1"></i> Privacy Policy</A></li>
+                            <li><a href="#"><i class="fa fa-angle-right pr-1"></i> Blog</a></li>
+                            <li><a href="#"><i class="fa fa-angle-right pr-1"></i> Our Partners</a></li>
+                            <li><a href="#"><i class="fa fa-angle-right pr-1"></i> How It Work</a></li>
+                            <li><a href="#"><i class="fa fa-angle-right pr-1"></i> Privacy Policy</a></li>
                         </ul>
                     </div>
                     <div class="col-12 col-sm-6 col-lg-3">
                         <h5 class="footer-head">Help</h5>
                         <ul class="list-unstyled footer-links lis-line-height-2_5">
-                            <li><A href="#"><i class="fa fa-angle-right pr-1"></i> Add Listing</A></li>
-                            <li><A href="#"><i class="fa fa-angle-right pr-1"></i> Sign In</A></li>
-                            <li><A href="#"><i class="fa fa-angle-right pr-1"></i> Register</A></li>
-                            <li><A href="#"><i class="fa fa-angle-right pr-1"></i> Pricing</A></li>
-                            <li><A href="#"><i class="fa fa-angle-right pr-1"></i> Contact Us</A></li>
+                            <li><a href="#"><i class="fa fa-angle-right pr-1"></i> Add Listing</a></li>
+                            <li><a href="#"><i class="fa fa-angle-right pr-1"></i> Sign In</a></li>
+                            <li><a href="#"><i class="fa fa-angle-right pr-1"></i> Register</a></li>
+                            <li><a href="#"><i class="fa fa-angle-right pr-1"></i> Pricing</a></li>
+                            <li><a href="#"><i class="fa fa-angle-right pr-1"></i> Contact Us</a></li>
                         </ul>
                     </div>
                 </div>
             </div>
             <div class="col-12 col-md-4">
                 <div class="footer-logo">
-                    <a href="#"><img src="dist/images/logo.png" alt="" class="img-fluid" /></a>
+                    <a href="#"><img src="img/images/logo.png" alt="" class="img-fluid" /></a>
                 </div>
                 <p class="my-4">Donec pede justo, fringilla vel, aliquet nec, vulputate eget, arcu in  felis eu pede mollis enim.</p>
-                <a href="#" class="text-white"><u>App Download</u></a>
+                <a href="#" class="text-white"><u>App Download</u></<a
                 <ul class="list-inline mb-0 mt-2">
-                    <li class="list-inline-item"><A href="#"><img src="dist/images/play-store.png" alt="" class="img-fluid" /></a></li>
-                    <li class="list-inline-item"><A href="#"><img src="dist/images/google-play.png" alt="" class="img-fluid" /></a></li>
-                    <li class="list-inline-item"><A href="#"><img src="dist/images/windows.png" alt="" class="img-fluid" /></a></li>
+                    <li class="list-inline-item"><A href="#"><img src="img/play-store.png" alt="" class="img-fluid" /></a></li>
+                    <li class="list-inline-item"><A href="#"><img src="img/google-play.png" alt="" class="img-fluid" /></a></li>
+                    <li class="list-inline-item"><A href="#"><img src="img/windows.png" alt="" class="img-fluid" /></a></li>
                 </ul>
             </div>
         </div>
@@ -144,11 +144,11 @@
                 </div>
                 <div class="col-12 col-md-6 text-center text-md-right">
                     <ul class="list-inline footer-social mb-0">
-                        <li class="list-inline-item pr-3"><A href="#"><i class="fa fa-facebook"></i></a></li>
-                        <li class="list-inline-item pr-3"><A href="#"><i class="fa fa-twitter"></i></a></li>
-                        <li class="list-inline-item pr-3"><A href="#"><i class="fa fa-linkedin"></i></a></li>
-                        <li class="list-inline-item pr-3"><A href="#"><i class="fa fa-tumblr"></i></a></li>
-                        <li class="list-inline-item"><A href="#"><i class="fa fa-pinterest-p"></i></a></li>
+                        <li class="list-inline-item pr-3"><a href="#"><i class="fa fa-facebook"></i></a></li>
+                        <li class="list-inline-item pr-3"><a href="#"><i class="fa fa-twitter"></i></a></li>
+                        <li class="list-inline-item pr-3"><a href="#"><i class="fa fa-linkedin"></i></a></li>
+                        <li class="list-inline-item pr-3"><a href="#"><i class="fa fa-tumblr"></i></a></li>
+                        <li class="list-inline-item"><a href="#"><i class="fa fa-pinterest-p"></i></a></li>
                     </ul>
                 </div>
             </div>

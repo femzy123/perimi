@@ -847,6 +847,7 @@ textarea.form-control {
 
 .box-line-dotted1:before {
   background: url(../images/border-dotted-1.png) center top no-repeat; }
+  /*background: url(../images/border-dotted-1.png) center top no-repeat; }*/
 
 .box-line-dotted2:before {
   background: url(../images/border-dotted-2.png) center bottom no-repeat;

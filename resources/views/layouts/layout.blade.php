@@ -22,7 +22,7 @@
 <!-- header -->
 <div id="header-fix" class="header fixed-top">
     <nav class="navbar navbar-toggleable-md navbar-expand-lg navbar-light py-lg-0 py-4">
-        <a class="navbar-brand mr-4 mr-md-5" href="/"><img src="/storage/images/logo.png" alt="Logo" height="30px"></a>
+        <a class="navbar-brand mr-4 mr-md-5" href="/"><img src="img/images/logo.png" alt="Logo" height="30px"></a>
 
         <div id="dl-menu" class="dl-menuwrapper d-block d-lg-none float-right">
             <button>Open Menu</button>
@@ -136,7 +136,7 @@
 <section class="image-bg footer lis-grediant grediant-bt pb-0">
     <div class="background-image-maker"></div>
     <div class="holder-image">
-        <img src="/storage/images/bg3.jpg" alt="" class="img-fluid d-none">
+        <img src="/public/img/images/bg3.jpg" alt="" class="img-fluid d-none">
     </div>
     <div class="container">
         <div class="row pb-5">
@@ -184,14 +184,14 @@
             </div>
             <div class="col-12 col-md-4">
                 <div class="footer-logo">
-                    <a href="#"><img src="/storage/images/logo.png" alt="" class="img-fluid" /></a>
+                    <a href="#"><img src="/public/img/images/logo.png" alt="" class="img-fluid" /></a>
                 </div>
                 <p class="my-4">Donec pede justo, fringilla vel, aliquet nec, vulputate eget, arcu in  felis eu pede mollis enim.</p>
                 <a href="#" class="text-white"><u>App Download</u></a>
                 <ul class="list-inline mb-0 mt-2">
-                    <li class="list-inline-item"><A href="#"><img src="/storage/images/play-store.png" alt="" class="img-fluid" /></a></li>
-                    <li class="list-inline-item"><A href="#"><img src="/storage/images/google-play.png" alt="" class="img-fluid" /></a></li>
-                    <li class="list-inline-item"><A href="#"><img src="/storage/images/windows.png" alt="" class="img-fluid" /></a></li>
+                    <li class="list-inline-item"><A href="#"><img src="/public/img/images/play-store.png" alt="" class="img-fluid" /></a></li>
+                    <li class="list-inline-item"><A href="#"><img src="/public/img/images/google-play.png" alt="" class="img-fluid" /></a></li>
+                    <li class="list-inline-item"><A href="#"><img src="/public/img/images/windows.png" alt="" class="img-fluid" /></a></li>
                 </ul>
             </div>
         </div>
