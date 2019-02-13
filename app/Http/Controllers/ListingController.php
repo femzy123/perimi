@@ -2,12 +2,21 @@
 
 namespace App\Http\Controllers;
 
+use Illuminate\Http\Request;
+use App\Reposities\Repository;
 use App\Listing;
 use App\User;
-use Illuminate\Http\Request;
 
 class ListingController extends Controller
 {
+    protected $listing;
+    protected $user;
+
+    public function __construct(Listing $listings, User $user)
+    {
+        $this->listing = new Repository($listings);
+        $this->user = new Repository($user);
+    }
     /**
      * Display a listing of the resource.
      *
@@ -48,10 +57,12 @@ class ListingController extends Controller
      * @return \Illuminate\Http\Response
      */
     public function show($id)
-    {
-        $listing = Listing::find($id);
+    { // ** Test and make sure new code works
+//        $listing = Listing::find($id);
 
-        return view('listings.show')->with('listing', $listing);
+        $listings = $this->listing->show($id);
+
+        return view('listings.show')->with('listing', $listings);
     }
 
     /**
