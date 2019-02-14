@@ -7,9 +7,9 @@ interface RepositoryInterface
 
     public function create(array $data);
 
-    public function update(array $data, $id);
+    public function update(array $data);
 
-    public function delete($id);
+    public function delete();
 
-    public function show($id);
+    public function find($id);
 }

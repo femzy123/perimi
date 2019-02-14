@@ -6,7 +6,7 @@ use Illuminate\Databse\Eloquent\Model;
 
 class Repository implements RepositoryInterface
 {
-    protected $model;
+    public $model;
 
     public function __construct(Model $model)
     {
@@ -23,17 +23,17 @@ class Repository implements RepositoryInterface
         return $this->model->create($data);
     }
 
-    public function update(array $data, $id)
+    public function update(array $data)
     {
-        return $this->model->where('id', $id)->update($data);
+        return $this->model->update($data);
     }
 
-    public function delete($id)
+    public function delete()
     {
-        return $this->model->delete($id);
+        return $this->model->delete();
     }
 
-    public function show ($id)
+    public function find ($id)
     {
         return $this->model->findOrFail($id);
     }

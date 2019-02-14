@@ -15,83 +15,56 @@ class ListingController extends Controller
     {
         $this->listing = new ListingRepository($listing);
     }
-    /**
-     * Display a listing of the resource.
-     *
-     * @return \Illuminate\Http\Response
-     */
+
     public function index()
     {
-        $listings = Listing::orderBy('created_at')->paginate(8);
-
-        return view('listings.index')->with('listings', $listings);
+        $listings = $this->listing->list();
+        return view('listings.index', compact('listings'));
     }
 
-    /**
-     * Show the form for creating a new resource.
-     *
-     * @return \Illuminate\Http\Response
-     */
     public function create()
     {
-        //
+        return view('listings.create');
     }
 
-    /**
-     * Store a newly created resource in storage.
-     *
-     * @param  \Illuminate\Http\Request  $request
-     * @return \Illuminate\Http\Response
-     */
-    public function store(Request $request)
+    public function store()
     {
-
+        if($this->listing->create(request()->merge([
+            'user_id' => Auth::id()
+        ]))){
+            return redirect()->view('listings.index')->with('status', 'Listing was sucessfully created.');
+        }
     }
 
-    /**
-     * Display the specified resource.
-     *
-     * @param  int  $id
-     * @return \Illuminate\Http\Response
-     */
-    public function show($id)
+
+    public function show(Listing $listing)
     {
-        $listings = $this->listing->show($id);
-
-        return view('listings.show')->with('listing', $listings);
+        return view('listings.show', compact('listing'));
     }
 
-    /**
-     * Show the form for editing the specified resource.
-     *
-     * @param  int  $id
-     * @return \Illuminate\Http\Response
-     */
+
     public function edit($id)
     {
-        //
+        $listing = $this->listing->find($id);
+
+        return view('listing.edit', compact('listing'));
     }
 
-    /**
-     * Update the specified resource in storage.
-     *
-     * @param  \Illuminate\Http\Request  $request
-     * @param  int  $id
-     * @return \Illuminate\Http\Response
-     */
-    public function update(Request $request, $id)
+    public function update()
     {
-        //
+        if(!$this->listing->update(request()->merge([
+            'user_id' => Auth::id()
+        ]))) {
+            return abort(404);
+        }
+        return view('listing.show')->with('status', 'Sucessfully updated listing.');
     }
 
-    /**
-     * Remove the specified resource from storage.
-     *
-     * @param  int  $id
-     * @return \Illuminate\Http\Response
-     */
-    public function destroy($id)
+    public function destroy(Lisitng $listing)
     {
-        //
+        $listing->delete();
+//        $request->session()->flash('status', 'Listing was sucessfully deleted.');
+        return view('listing.index')->with('status', 'Listing was sucessfully deleted.');
+
     }
 }
