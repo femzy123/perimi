@@ -20,7 +20,7 @@ Route::get('/', 'IndexController@index');
 Route::resources([
     'category' => 'CategoryController',
     'event' => 'EventController',
-    'listings' => 'ListingsController'
+    'listings' => 'ListingController'
 ]);
 
 Route::get('/dashboard/{id}', 'DashboardController@profile');

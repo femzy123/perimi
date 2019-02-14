@@ -18,12 +18,12 @@ class Repository implements RepositoryInterface
         return $this->model->all();
     }
 
-    public function create($data)
+    public function create(array $data)
     {
         return $this->model->create($data);
     }
 
-    public function update($data, $id)
+    public function update(array $data, $id)
     {
         return $this->model->where('id', $id)->update($data);
     }
