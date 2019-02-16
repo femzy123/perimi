@@ -6,7 +6,7 @@
     <section class="image-bg lis-grediant grediant-tb">
         <div class="background-image-maker"></div>
         <div class="holder-image">
-            <img src="img/images/bg1.jpg" alt="" class="img-fluid d-none">
+            <img src="/storage/images/bg1.jpg" alt="" class="img-fluid d-none">
         </div>
         <div class="container">
             <div class="row justify-content-center pt-5">
@@ -119,7 +119,7 @@
                     <div>
                         <div class="card lis-brd-light text-center text-lg-left lis-info lis-relative">
                             <a href="#">
-                                <div class="lis-grediant grediant-tb-light lis-relative modImage rounded"> <img src="img/{{ $category->image }}" alt="" class="img-fluid rounded" /> </div>
+                                <div class="lis-grediant grediant-tb-light lis-relative modImage rounded"> <img src="/storage/{{ $category->image }}" alt="" class="img-fluid rounded" /> </div>
                             </a>
                             <div class="hover-text lis-absolute lis-left-20 lis-bottom-20 lis-font-roboto text-white text-left">
                                 <h6 class="text-white mb-0">{{ $category->name }}</h6> <span class="lis-font-roboto">{{ $category->listings_count }} listings</span> </div>
@@ -152,7 +152,7 @@
             <div class="row portfolio-box">
                 <div class="post col-md-4 text-center wow fadeInUp mb-4">
                     <a href="#" class="text-white">
-                        <div class="text-white lis-relative lis-masonry"> <img src="img/images/masonry1.jpg" alt="" class="img-fluid rounded w-100">
+                        <div class="text-white lis-relative lis-masonry"> <img src="/storage/images/masonry1.jpg" alt="" class="img-fluid rounded w-100">
                             <div class="overlay rounded"></div>
                             <div class="lis-absolute lis-right-0 lis-left-0 lis-top-0 w-100 h-100">
                                 <div class="d-table w-100 h-100">
@@ -167,7 +167,7 @@
                 </div>
                 <div class="post col-md-4 text-center wow fadeInUp mb-4 mb-md-0">
                     <a href="#" class="text-white">
-                        <div class="text-white lis-relative lis-masonry"> <img src="img/images/masonry2.jpg" alt="" class="img-fluid rounded w-100">
+                        <div class="text-white lis-relative lis-masonry"> <img src="/storage/images/masonry2.jpg" alt="" class="img-fluid rounded w-100">
                             <div class="overlay rounded"></div>
                             <div class="lis-absolute lis-right-0 lis-left-0 lis-top-0 w-100 h-100">
                                 <div class="d-table w-100 h-100">
@@ -182,7 +182,7 @@
                 </div>
                 <div class="post col-md-4 text-center wow fadeInUp mb-4">
                     <a href="#" class="text-white">
-                        <div class="text-white lis-relative lis-masonry"> <img src="img/images/masonry3.jpg" alt="" class="img-fluid rounded w-100">
+                        <div class="text-white lis-relative lis-masonry"> <img src="/storage/images/masonry3.jpg" alt="" class="img-fluid rounded w-100">
                             <div class="overlay rounded"></div>
                             <div class="lis-absolute lis-right-0 lis-left-0 lis-top-0 w-100 h-100">
                                 <div class="d-table w-100 h-100">
@@ -197,7 +197,7 @@
                 </div>
                 <div class="post col-md-4 text-center wow fadeInUp mb-4 mb-md-0">
                     <a href="#" class="text-white">
-                        <div class="text-white lis-relative lis-masonry"> <img src="img/images/masonry4.jpg" alt="" class="img-fluid rounded w-100">
+                        <div class="text-white lis-relative lis-masonry"> <img src="/storage/images/masonry4.jpg" alt="" class="img-fluid rounded w-100">
                             <div class="overlay rounded"></div>
                             <div class="lis-absolute lis-right-0 lis-left-0 lis-top-0 w-100 h-100">
                                 <div class="d-table w-100 h-100">
@@ -212,7 +212,7 @@
                 </div>
                 <div class="post col-md-4 text-center wow fadeInUp mb-4 mb-md-0">
                     <a href="#" class="text-white">
-                        <div class="text-white lis-relative lis-masonry"> <img src="img/images/masonry5.jpg" alt="" class="img-fluid rounded w-100">
+                        <div class="text-white lis-relative lis-masonry"> <img src="/storage/images/masonry5.jpg" alt="" class="img-fluid rounded w-100">
                             <div class="overlay rounded"></div>
                             <div class="lis-absolute lis-right-0 lis-left-0 lis-top-0 w-100 h-100">
                                 <div class="d-table w-100 h-100">
@@ -250,7 +250,7 @@
                         <div class="card lis-brd-light text-center text-lg-left">
                             <a href="#">
                                 <div class="lis-grediant grediant-tb-light2 lis-relative modImage rounded-top">
-                                    <img src="img/{{ $listing->cover_image }}" alt="" class="img-fluid rounded-top w-100 cover_img" />
+                                    <img src="/storage/{{ $listing->cover_image }}" alt="" class="img-fluid rounded-top w-100 cover_img" />
                                 </div>
                                 <div class="lis-absolute lis-right-20 lis-top-20">
                                     <div class="lis-post-meta border border-white text-white rounded lis-f-14">Open</div>
@@ -258,7 +258,7 @@
                             </a>
                             <div class="card-body pt-0">
                                 <div class="media d-block d-lg-flex lis-relative">
-                                    <img src="img/{{ $listing->logo }}" alt="" class="lis-mt-minus-15 img-fluid d-lg-flex mx-auto mr-lg-3 mb-4 mb-lg-0 lis-border-width-2 border-white logo" />
+                                    <img src="/storage/{{ $listing->logo }}" alt="" class="lis-mt-minus-15 img-fluid d-lg-flex mx-auto mr-lg-3 mb-4 mb-lg-0 lis-border-width-2 border-white logo" />
                                     <div class="media-body align-self-start mt-2">
                                         <h5 class="mb-0 lis-font-weight-600"><A href="#" class="lis-dark">{{ $listing->name }}</A></h5>
                                         <p class="blockquote-footer">{{ $listing->tagline }}</p>
@@ -313,21 +313,21 @@
             <div class="row">
                 <div class="col-12 col-md-4 text-center wow fadeInUp mb-5 mb-md-0">
                     <div class="icon-box box-line box-line-dotted1 lis-relative">
-                        <img src="img/images/icon-1.png" alt="" class="img-fluid mb-4 z-index-99  lis-relative" />
+                        <img src="/storage/images/icon-1.png" alt="" class="img-fluid mb-4 z-index-99  lis-relative" />
                         <h5>1. Find Interesting Place</h5>
                         {{-- <p>Etiam rhoncus. Maecenas tempus, tellus eget condimentum rhoncus, sem quam semper libero, sit amet adipiscing sem neque sed ipsum.</p> --}}
                     </div>
                 </div>
                 <div class="col-12 col-md-4 text-center wow fadeInUp mb-5 mb-md-0">
                     <div class="icon-box box-line box-line-dotted2 lis-relative">
-                        <img src="img/images/icon-2.png" alt="" class="img-fluid mb-4 z-index-99  lis-relative" />
+                        <img src="/storage/images/icon-2.png" alt="" class="img-fluid mb-4 z-index-99  lis-relative" />
                         <h5>2. Choose a Category</h5>
                         {{-- <p>Etiam rhoncus. Maecenas tempus, tellus eget condimentum rhoncus, sem quam semper libero, sit amet adipiscing sem neque sed ipsum.</p> --}}
                     </div>
                 </div>
                 <div class="col-12 col-md-4 text-center wow fadeInUp mb-5 mb-md-0">
                     <div class="icon-box">
-                        <img src="img/images/icon-3.png" alt="" class="img-fluid mb-4 z-index-99  lis-relative" />
+                        <img src="/storage/images/icon-3.png" alt="" class="img-fluid mb-4 z-index-99  lis-relative" />
                         <h5>3. Contact with Owners</h5>
                         {{-- <p>Etiam rhoncus. Maecenas tempus, tellus eget condimentum rhoncus, sem quam semper libero, sit amet adipiscing sem neque sed ipsum.</p> --}}
                     </div>
@@ -354,7 +354,7 @@
                         <div class="card lis-brd-light bg-transparent">
                         <a href="listing-explore-event-profile.html">
                             <div class="modImage lis-grediant grediant-tb-light2 lis-relative rounded-top">
-                                <img src="img/{{ $event->image }}" alt="" class="img-fluid rounded-top w-100 event_img">
+                                <img src="/storage/{{ $event->image }}" alt="" class="img-fluid rounded-top w-100 event_img">
                             </div>
                             <div class="lis-absolute lis-right-20 lis-top-20">
                                 <div class="lis-post-meta border border-white text-white rounded lis-f-14">{{ \Carbon\Carbon::parse($event->date)->format('d/m/Y') }}</div>

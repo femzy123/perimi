@@ -21,7 +21,7 @@
 <!-- header -->
 <div id="header-fix" class="header fixed-top transperant">
     <nav class="navbar navbar-toggleable-md navbar-expand-lg navbar-light py-lg-0 py-4">
-        <a class="navbar-brand mr-4 mr-md-5" href="/"><img src="img/images/logo.png" alt="Logo" height="30px"></a>
+        <a class="navbar-brand mr-4 mr-md-5" href="/"><img src="/storage/images/logo.png" alt="Logo" height="30px"></a>
 
         <div id="dl-menu" class="dl-menuwrapper d-block d-lg-none float-right">
             <button>Open Menu</button>
@@ -110,7 +110,7 @@
 <section class="image-bg footer lis-grediant grediant-bt pb-0">
     <div class="background-image-maker"></div>
     <div class="holder-image">
-        <img src="img/images/bg3.jpg" alt="" class="img-fluid d-none">
+        <img src="/storage/images/bg3.jpg" alt="" class="img-fluid d-none">
     </div>
     <div class="container">
         <div class="row pb-5">
@@ -158,7 +158,7 @@
             </div>
             <div class="col-12 col-md-4">
                 <div class="footer-logo">
-                    <a href="#"><img src="img/images/logo.png" alt="" class="img-fluid" /></a>
+                    <a href="#"><img src="/storage/images/logo.png" alt="" class="img-fluid" /></a>
                 </div>
                 <p class="my-4">Donec pede justo, fringilla vel, aliquet nec, vulputate eget, arcu in  felis eu pede mollis enim.</p>
                 <a href="#" class="text-white"><u>App Download</u></a>

@@ -20,6 +20,7 @@ class ListingController extends Controller
     public function index()
     {
         $listings = $this->listing->list();
+//        $categories = $this->listing->categories();
         return view('listings.index', compact('listings'));
     }
 

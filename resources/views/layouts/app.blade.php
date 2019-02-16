@@ -26,7 +26,7 @@
     <nav class="navbar navbar-expand-md navbar-light navbar-laravel">
         <div class="container">
             <a class="navbar-brand" href="{{ url('/') }}">
-                <img src="img/images/logo_bg_color.png" height="20px">
+                <img src="/dist/images/logo_bg_color.png" height="20px">
             </a>
             <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="{{ __('Toggle navigation') }}">
                 <span class="navbar-toggler-icon"></span>
@@ -124,7 +124,7 @@
             </div>
             <div class="col-12 col-md-4">
                 <div class="footer-logo">
-                    <a href="#"><img src="img/images/logo.png" alt="" class="img-fluid" /></a>
+                    <a href="#"><img src="dist/images/logo.png" alt="" class="img-fluid" /></a>
                 </div>
                 <p class="my-4">Donec pede justo, fringilla vel, aliquet nec, vulputate eget, arcu in  felis eu pede mollis enim.</p>
                 <a href="#" class="text-white"><u>App Download</u></<a

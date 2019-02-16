@@ -22,7 +22,7 @@
 <!-- header -->
 <div id="header-fix" class="header fixed-top">
     <nav class="navbar navbar-toggleable-md navbar-expand-lg navbar-light py-lg-0 py-4">
-        <a class="navbar-brand mr-4 mr-md-5" href="/"><img src="img/images/logo.png" alt="Logo" height="30px"></a>
+        <a class="navbar-brand mr-4 mr-md-5" href="/"><img src="/storage/images/logo.png" alt="Logo" height="30px"></a>
 
         <div id="dl-menu" class="dl-menuwrapper d-block d-lg-none float-right">
             <button>Open Menu</button>
@@ -180,14 +180,14 @@
             </div>
             <div class="col-12 col-md-4">
                 <div class="footer-logo">
-                    <a href="#"><img src="/public/img/images/logo.png" alt="" class="img-fluid" /></a>
+                    <a href="#"><img src="/storage/img/images/logo.png" alt="" class="img-fluid" /></a>
                 </div>
                 <p class="my-4">Donec pede justo, fringilla vel, aliquet nec, vulputate eget, arcu in  felis eu pede mollis enim.</p>
                 <a href="#" class="text-white"><u>App Download</u></a>
                 <ul class="list-inline mb-0 mt-2">
-                    <li class="list-inline-item"><A href="#"><img src="/public/img/images/play-store.png" alt="" class="img-fluid" /></a></li>
-                    <li class="list-inline-item"><A href="#"><img src="/public/img/images/google-play.png" alt="" class="img-fluid" /></a></li>
-                    <li class="list-inline-item"><A href="#"><img src="/public/img/images/windows.png" alt="" class="img-fluid" /></a></li>
+                    <li class="list-inline-item"><A href="#"><img src="/storage/img/images/play-store.png" alt="" class="img-fluid" /></a></li>
+                    <li class="list-inline-item"><A href="#"><img src="/storage/img/images/google-play.png" alt="" class="img-fluid" /></a></li>
+                    <li class="list-inline-item"><A href="#"><img src="/storage/img/images/windows.png" alt="" class="img-fluid" /></a></li>
                 </ul>
             </div>
         </div>

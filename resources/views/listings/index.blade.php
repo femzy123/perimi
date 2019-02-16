@@ -45,7 +45,9 @@
                             </div>
                         </div>
                         <div class="row mt-5">
-                            @foreach($listings as $listing)
+                            <p>{{ $listings }}</p>
+
+                        @foreach($listings as $listing)
                                 <div class="col-12 col-xl-6 mb-xl-0 mb-5">
                                 <div class="card lis-brd-light text-center text-lg-left">
                                     <a href="/listings/{{ $listing->id }}">
