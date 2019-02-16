@@ -10,57 +10,17 @@
                     <div class="lis-relative">
                         <h5 class="mb-2">Which event are you looking for?</h5>
                         <p>Search by Keywords, Location, Category or Filters</p>
-                        <div class="row">
-                            <div class="col-12 col-md-6">
-                                <div class="form-group lis-relative">
-                                    <input type="text" class="form-control border-top-0 border-left-0 border-right-0 rounded-0 pl-4" placeholder="What are you looking for?">
-                                    <div class="lis-search">
-                                        <i class="fa fa-search lis-primary lis-left-0"></i>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="col-12 col-md-6">
-                                <div class="form-group lis-relative">
-                                    <input type="text" class="form-control border-top-0 border-left-0 border-right-0 rounded-0 pl-4" placeholder="Location">
-                                    <div class="lis-search">
-                                        <i class="fa fa-map-o lis-primary lis-left-0"></i>
-                                    </div>
-                                    <div class="lis-search">
-                                        <a href="#" class="lis-light"><i class="fa fa-crosshairs lis-left-auto lis-right-0"></i></a>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="col-12 col-md-4">
-                                <div class="form-group lis-relative">
-                                    <select class="style-select form-control border-top-0 border-left-0 border-right-0 rounded-0 pl-4">
-                                        <option> All Categories</option>
-                                        @foreach($categories as $category)
-                                            <option>{{ $category->name }}</option>
-                                        @endforeach
-                                    </select>
-                                    <div class="lis-search">
-                                        <i class="fa fa-tags lis-primary lis-left-0"></i>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="col-12 col-md-4">
-                                <p class="pt-2 mb-2">Radius <span id="ex6CurrentSliderValLabel"> <span id="ex6SliderVal">530 </span></span></p>
-                                <input id="ex6" type="text" data-slider-min="300" data-slider-max="1000" data-slider-step="1" data-slider-value="3"/>
-                            </div>
-                            <div class="col-12 col-md-4">
-                                <div id="datepicker" class="form-group lis-relative">
-                                    <input type="text" class="form-control border-top-0 border-left-0 border-right-0 rounded-0 pl-4 has-datepicker" placeholder="Date" />
-                                    <div class="lis-search">
-                                        <i class="fa fa-calendar lis-primary lis-left-0"></i>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="row mt-3">
-                            <div class="col-12 col-md-12 pt-4">
-                                <a href="#" class="btn btn-info"><i class="fa fa-search pr-2"></i> Search Events</a>
-                            </div>
-                        </div>
+
+                        @component('components.search-form', [
+                        'categories' => $categories,
+                        'search_btn' => 'Search Events',
+                        'location' => true,
+                        'date' => true,
+                        'radius' => true
+
+                        ])
+                        @endcomponent
+
                         <div class="row mt-5">
                             @forelse($events as $event)
                                 <div class="col-12 col-xl-6 mb-xl-0 mb-5">
@@ -109,4 +69,3 @@
     </a>
     <!-- End Top To Bottom-->
 
-@endsection

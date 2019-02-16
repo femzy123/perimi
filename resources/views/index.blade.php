@@ -25,76 +25,26 @@
                     </ul>
                     <div class="tab-content bg-white p-5 rounded-bottom rounded-right" id="myTabContent">
                         <div class="tab-pane fade show active" id="home" role="tabpanel" aria-labelledby="home-tab">
-                            <div class="row">
-                                <div class="col-12 col-md-12">
-                                    <div class="form-group">
-                                        <input type="text" class="form-control border-top-0 border-left-0 border-right-0 rounded-0 pl-4" placeholder="What are you looking for?" />
-                                        <div class="lis-search">
-                                            <i class="fa fa-search lis-primary"></i>
-                                        </div>
-                                    </div>
-                                </div>
-                                <div class="col-12 col-sm-6 col-lg-4">
-                                    <div class="form-group">
-                                        <input type="text" class="form-control border-top-0 border-left-0 border-right-0 rounded-0 pl-4" placeholder="Location" />
-                                        <div class="lis-search">
-                                            <i class="fa fa-map-o lis-primary"></i>
-                                        </div>
-                                    </div>
-                                </div>
-                                <div class="col-12 col-sm-6 col-lg-4">
-                                    <div class="form-group">
-                                        <select class="form-control border-top-0 border-left-0 border-right-0 rounded-0 pl-4">
-                                            <option> All Categories</option>
-                                            <option>1</option>
-                                            <option>2</option>
-                                            <option>3</option>
-                                        </select>
-                                        <div class="lis-search">
-                                            <i class="fa fa-tags lis-primary"></i>
-                                        </div>
-                                    </div>
-                                </div>
-                                <div class="col-12 col-lg-4">
-                                    <a href="#" class="btn btn-info btn-block btn-lg"><i class="fa fa-search pr-1"></i> Search</a>
-                                </div>
-                            </div>
+                            @component('components.search-form', [
+                                 'categories' => $categories,
+                                 'search_btn' => 'Search Events',
+                                 'location' => true,
+                                 'date' => false,
+                                 'radius' => false
+
+                                 ])
+                            @endcomponent
                         </div>
                         <div class="tab-pane fade" id="profile" role="tabpanel" aria-labelledby="profile-tab">
-                            <div class="row">
-                                <div class="col-12 col-md-12">
-                                    <div class="form-group">
-                                        <input type="text" class="form-control border-top-0 border-left-0 border-right-0 rounded-0 pl-4" placeholder="What are you looking for?" />
-                                        <div class="lis-search">
-                                            <i class="fa fa-search lis-primary"></i>
-                                        </div>
-                                    </div>
-                                </div>
-                                <div class="col-12 col-sm-6 col-lg-4">
-                                    <div class="form-group">
-                                        <input type="text" class="form-control border-top-0 border-left-0 border-right-0 rounded-0 pl-4" placeholder="Location" />
-                                        <div class="lis-search">
-                                            <i class="fa fa-map-o lis-primary"></i>
-                                        </div>
-                                    </div>
-                                </div>
-                                <div class="col-12 col-sm-6 col-lg-4">
-                                    <div class="form-group">
-                                        <select class="form-control border-top-0 border-left-0 border-right-0 rounded-0 pl-4">
-                                            <option> All Categories</option>
-                                            <option>1</option>
-                                            <option>2</option>
-                                            <option>3</option>
-                                        </select>
-                                        <div class="lis-search">
-                                            <i class="fa fa-tags lis-primary"></i>
-                                        </div>
-                                    </div>
-                                </div>
-                                <div class="col-12 col-lg-4">
-                                    <a href="#" class="btn btn-info btn-block btn-lg"><i class="fa fa-search pr-1"></i> Search</a>
-                                </div>
-                            </div>
+                            @component('components.search-form', [
+                              'categories' => $categories,
+                              'search_btn' => 'Search Events',
+                              'location' => true,
+                              'date' => false,
+                              'radius' => false
+
+                              ])
+                            @endcomponent
                         </div>
                     </div>
                 </div>
