@@ -17,7 +17,7 @@
                 <div class="col-12 col-sm-6 col-xl-3 mb-4 wow fadeInUp">
                     <div class="card lis-brd-light text-center text-lg-left lis-info lis-relative">
                         <a href="/category/{{$category->id}}">
-                            <div class="lis-grediant grediant-tb-light lis-relative modImage rounded"> <img src="storage/{{ $category->image }}" alt="" class="img-fluid rounded" /> </div>
+                            <div class="lis-grediant grediant-tb-light lis-relative modImage rounded"> <img src="/img/{{ $category->image }}" alt="" class="img-fluid rounded" /> </div>
                             {{--<div class="lis-absolute lis-left-20 lis-top-20 lis-bg6 lis-icon lis-rounded-circle-50 text-center">--}}
                                 {{--<div class="text-white mb-0 lis-line-height-2_5 h4"><i class="icofont icofont-medical-sign-alt"></i></div>--}}
                             {{--</div>--}}
@@ -31,5 +31,4 @@
         </div>
     </section>
     <!--End Category -->
-
 @endsection

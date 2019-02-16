@@ -35,9 +35,9 @@
                                 <div class="form-group lis-relative">
                                     <select class="style-select form-control border-top-0 border-left-0 border-right-0 rounded-0 pl-4">
                                         <option> All Categories</option>
-                                        <option>1</option>
-                                        <option>2</option>
-                                        <option>3</option>
+                                        @foreach($categories as $category)
+                                            <option>{{ $category->name }}</option>
+                                        @endforeach
                                     </select>
                                     <div class="lis-search">
                                         <i class="fa fa-tags lis-primary lis-left-0"></i>

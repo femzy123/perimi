@@ -51,7 +51,7 @@
                             <div class="card lis-brd-light wow fadeInUp mb-4">
                                 <div class="card-body p-4">
                                     <div class="media d-md-flex d-block text-center text-md-left">
-                                        <a href="#"><img src="/storage/{{ $user->avatar }}" class="img-fluid d-md-flex mr-0 mr-md-5 rounded " alt="" width="280"></a>
+                                        <a href="#"><img src="/img/{{ $user->avatar }}" class="img-fluid d-md-flex mr-0 mr-md-5 rounded " alt="" width="280"></a>
                                         <div class="media-body align-self-center mt-4 mt-md-0">
                                             <h5 class="mb-0 lis-font-weight-500"><a href="#" class="lis-dark">{{ $user->name }}</a></h5>
                                             <p class="mb-0">Member since {{ $user->created_at->diffForHumans() }}</p>
@@ -116,7 +116,7 @@
                                     </div>
                                 </a>
                                 <div class="card-body pt-0">
-                                    <div class="media d-block d-lg-flex lis-relative"> <img src="/storage/{{ $listing->logo }}" alt="" class="lis-mt-minus-15 img-fluid d-lg-flex mx-auto mr-lg-3 mb-4 mb-lg-0 border lis-border-width-2 rounded-circle border-white" width="80" />
+                                    <div class="media d-block d-lg-flex lis-relative"> <img src="/img/{{ $listing->logo }}" alt="" class="lis-mt-minus-15 img-fluid d-lg-flex mx-auto mr-lg-3 mb-4 mb-lg-0 border lis-border-width-2 rounded-circle border-white" width="80" />
                                         <div class="media-body align-self-start mt-2">
                                             <h6 class="mb-0 lis-font-weight-600"><A href="#" class="lis-dark">{{ $listing->name }}</A></h6> </div>
                                     </div>

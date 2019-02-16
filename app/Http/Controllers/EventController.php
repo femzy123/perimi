@@ -5,16 +5,18 @@ namespace App\Http\Controllers;
 use App\Eventcategory;
 use App\Event;
 use App\User;
+use App\Category;
 use Illuminate\Http\Request;
 
 
 class EventController extends Controller
 {
-    public function index()
+    public function index(Category $category)
     {
+        $categories = $category->all();
         $events = Event::orderBy('created_at')->paginate(8);
 
-        return view('event.index')->with('events', $events);
+        return view('event.index', compact('categories'))->with('events', $events);
     }
 
     public function show($id)

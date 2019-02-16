@@ -6,7 +6,7 @@ use Illuminate\Http\Request;
 use App\Repositories\ListingRepository;
 use Illuminate\Databse\Eloquent\Model;
 use App\Listing;
-
+use App\Http\Requests\CreateListing;
 class ListingController extends Controller
 {
     private $listing;
@@ -27,9 +27,9 @@ class ListingController extends Controller
         return view('listings.create');
     }
 
-    public function store()
+    public function store(CreateListing $listing)
     {
-        if($this->listing->create(request()->merge([
+        if($listing->validated()->create(request()->merge([
             'user_id' => Auth::id()
         ]))){
             return redirect()->view('listings.index')->with('status', 'Listing was sucessfully created.');
