@@ -7,6 +7,11 @@
         <div class="container pt-5 mt-5">
             <div class="row justify-content-center">
                 <div class="col-12 col-md-10 text-center">
+                    @if (session('status'))
+                        <div class="alert alert-success">
+                            {{ session('status') }}
+                        </div>
+                    @endif
                     <div class="heading pb-4">
                         <h5 class="lis-light">Find the best places</h5>
                         <h2 class="f-weight-500">Find Listings by Category</h2> </div>

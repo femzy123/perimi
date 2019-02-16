@@ -10,7 +10,6 @@
                     <div class="lis-relative">
                         <h5 class="mb-2">Which event are you looking for?</h5>
                         <p>Search by Keywords, Location, Category or Filters</p>
-
                         <div class="row">
                             <div class="col-12 col-md-6">
                                 <div class="form-group lis-relative">

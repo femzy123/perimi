@@ -69,11 +69,7 @@
                             </li>
                             @endguest
                     </ul></li>
-
                 <li> <a href="add-listing.html" ><i class="fa fa-plus pr-1"></i> Add Listing</a></li>
-
-
-
             </ul>
         </div>
 
@@ -87,7 +83,7 @@
                     <a class="nav-link" href="#" data-toggle="dropdown" aria-expanded="false">Listing</a>
                     <ul class="dropdown-menu">
                         <li class="">
-                        <a tabindex="-1" href="/category">Listing By Categories</a>
+                        <a tabindex="-1" href="/category">By Category</a>
                         </li>
                         {{--<li class="">--}}
                         {{--<a tabindex="-1" href="listing-no-map-fullwidth.html">Listings No Map</a>--}}
@@ -125,7 +121,7 @@
                     </li>
                     @endguest
             </ul>
-            <a href="#" class="btn btn-outline-light btn-sm ml-0 ml-lg-4 mt-3 mt-lg-0"><i class="fa fa-plus pr-1"></i> Add Listing</a>
+            <a href="listings/create" class="btn btn-outline-light btn-sm ml-0 ml-lg-4 mt-3 mt-lg-0"><i class="fa fa-plus pr-1"></i> Add Listing</a>
         </div>
     </nav>
 </div>

@@ -6,7 +6,8 @@ use Illuminate\Http\Request;
 use App\Repositories\ListingRepository;
 use Illuminate\Databse\Eloquent\Model;
 use App\Listing;
-use App\Http\Requests\CreateListing;
+use App\Http\Requests\ListingRequest;
+
 class ListingController extends Controller
 {
     private $listing;
@@ -27,7 +28,7 @@ class ListingController extends Controller
         return view('listings.create');
     }
 
-    public function store(CreateListing $listing)
+    public function store(ListingRequest $listing)
     {
         if($listing->validated()->create(request()->merge([
             'user_id' => Auth::id()
