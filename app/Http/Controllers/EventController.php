@@ -7,10 +7,17 @@ use App\Event;
 use App\User;
 use App\Category;
 use Illuminate\Http\Request;
-
+use App\Repositories\EventRepository;
 
 class EventController extends Controller
 {
+    private $event;
+
+    public function __construct(Event $event)
+    {
+        $this->event = new EventRepository($event);
+    }
+
     public function index(Category $category)
     {
         $categories = $category->all();
@@ -24,5 +31,10 @@ class EventController extends Controller
         $event = Event::findOrFail($id);
 
         return view('event.show')->with('event', $event);
+    }
+
+    public function list(Request $request)
+    {
+        return $this->event->search($request);
     }
 }

@@ -40,10 +40,10 @@
                 @endif
             ">
         <div class="form-group lis-relative">
-            <select class="style-select form-control border-top-0 border-left-0 border-right-0 rounded-0 pl-4">
+            <select id="category-select" class="style-select form-control border-top-0 border-left-0 border-right-0 rounded-0 pl-4">
                 <option> All Categories</option>
                 @foreach($categories as $category)
-                    <option>{{ $category->name }}</option>
+                    <option value="{{ $category->id }}">{{ $category->name }}</option>
                 @endforeach
             </select>
             <div class="lis-search">
@@ -58,7 +58,7 @@
         </div>
         @else
         <div class="col-12 col-lg-4">
-            <a href="#" class="btn btn-info btn-block btn-lg"><i class="fa fa-search pr-1"></i> Search</a>
+            <a href="{{ $url }}" class="btn btn-info btn-block btn-lg"><i class="fa fa-search pr-1"></i> Search</a>
         </div>
     @endif
     @if($date)
@@ -75,7 +75,7 @@
 @if($radius)
     <div class="row mt-3">
         <div class="col-12 col-md-12 pt-4">
-            <a href="#" class="btn btn-info"><i class="fa fa-search pr-2"></i>{{ $search_btn }}</a>
+            <a href="{{ $url }}}" class="btn btn-info"><i class="fa fa-search pr-2"></i>{{ $search_btn }}</a>
         </div>
     </div>
 @endif

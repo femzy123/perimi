@@ -30,7 +30,8 @@
                                  'search_btn' => 'Search Events',
                                  'location' => true,
                                  'date' => false,
-                                 'radius' => false
+                                 'radius' => false,
+                                 'url' => '/listing'
 
                                  ])
                             @endcomponent
@@ -41,7 +42,8 @@
                               'search_btn' => 'Search Events',
                               'location' => true,
                               'date' => false,
-                              'radius' => false
+                              'radius' => false,
+                              'url' =>'/event'
 
                               ])
                             @endcomponent

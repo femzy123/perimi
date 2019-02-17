@@ -16,7 +16,8 @@
                         'search_btn' => 'Search Events',
                         'location' => true,
                         'date' => true,
-                        'radius' => true
+                        'radius' => true,
+                        'url' => '/event'
 
                         ])
                         @endcomponent

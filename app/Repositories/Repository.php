@@ -8,11 +8,6 @@ class Repository implements RepositoryInterface
 {
     public $model;
 
-    public function __construct(Model $model)
-    {
-        $this->model = $model;
-    }
-
     public function all()
     {
         return $this->model->all();
@@ -36,6 +31,23 @@ class Repository implements RepositoryInterface
     public function find ($id)
     {
         return $this->model->findOrFail($id);
+    }
+
+    public function search($request)
+    {
+        $search = $request->input('search') ?? '';
+        $category = $request->input('category') ?? '';
+
+        return $this->model->when(
+
+            $category, function ($query, $category) {
+            return $query->where('eventcategory_id', $category);
+        })->when(
+            $search, function($query, $search) {
+
+            return $query->where('name', 'LIKE', '%' . $search . '%')
+                ->orWhere('description', 'LIKE', '%' . $search . '%');
+        })->get();
     }
 
 }
