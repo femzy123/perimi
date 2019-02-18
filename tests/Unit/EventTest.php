@@ -18,20 +18,20 @@ class EventTest extends TestCase
         $this->assertTrue(true);
     }
 
-    public function can_view_event_with_categories()
+    public function test_can_view_event_with_categories()
     { // add assertions to inspect the response content, json structure etc.
         $response = $this->get('/event');
         $response->assertStatus(200);
 
     }
 
-    public function can_show_event_by_id()
+    public function test_can_show_event_by_id()
     {
         $response = $this->get('/event/1');
         $response->assertStatus(200);
     }
 
-    public function testing()
+    public function test_search()
     { // End point for search events doesn't exist yet
         $this->assertTrue(true);
     }

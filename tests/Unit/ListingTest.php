@@ -18,14 +18,14 @@ class ListingTest extends TestCase
         $this->assertTrue(true);
     }
 
-    public function get_listing()
+    public function test_get_listing()
     {
         $this->assertTrue(true);
         $this->get('/listings');
         $this->assertStatus(200);
     }
 
-    public function get_listing_create_view()
+    public function test_get_listing_create_view()
     {
         $this->get('/listings/create');
         $this->assertStatus(200);
@@ -36,25 +36,25 @@ class ListingTest extends TestCase
 
     }
 
-    public function get_listing_detail()
+    public function test_get_listing_detail()
     {
         $this->get('/listings/1');
         $this->assertStatus(200);
     }
 
-    public function can_edit_listing()
+    public function test_can_edit_listing()
     {
         $this->get('/listings/1/edit');
         $this->assertStatus(200);
     }
 
-    public function update_listing()
+    public function test_update_listing()
     {
         $this->get('/listings/1');
         $this->assertStatus(200);
     }
 
-    public function can_destroy_listing()
+    public function test_can_destroy_listing()
     {
         $this->get('/listings/1');
         $this->assertStatus(200);
