@@ -6,6 +6,7 @@ use App\Category;
 use App\State;
 use App\Event;
 use App\Listing;
+use App\Eventcategory;
 use Illuminate\Http\Request;
 
 class IndexController extends Controller
@@ -21,12 +22,14 @@ class IndexController extends Controller
         $states = State::withCount('listings')->get();
         $listings = Listing::inRandomOrder()->get();
         $events = Event::inRandomOrder()->get();
+        $eventCategories = Eventcategory::get();
 
         return view('index')->with([
             'categories' => $categories,
             'states' => $states,
             'listings' => $listings,
             'events' => $events,
+            'eventcategories' => $eventCategories
         ]);
 
     }

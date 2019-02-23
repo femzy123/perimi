@@ -23,6 +23,10 @@ Route::resources([
     'listings' => 'ListingController'
 ]);
 
+Route::post('/search/listing', 'ListingController@search');
+Route::post('/search/event', 'EventController@search');
+
+
 Route::get('/dashboard/{id}', 'DashboardController@profile');
 
 Route::group(['prefix' => 'admin'], function () {

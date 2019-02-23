@@ -17,7 +17,8 @@
                         'location' => true,
                         'date' => true,
                         'radius' => true,
-                        'url' => '/event'
+                        'url' => '/event',
+                        'type' => 'event'
 
                         ])
                         @endcomponent
@@ -28,7 +29,7 @@
                                 <div class="card lis-brd-light bg-transparent">
                                     <a href="/event/{{$event->id}}">
                                         <div class="modImage lis-grediant grediant-tb-light2 lis-relative rounded-top">
-                                            <img src="storage/{{ $event->image }}" alt="" class="img-fluid rounded-top w-100">
+                                            <img src="\storage\{{ $event->image }}" alt="" class="img-fluid rounded-top w-100">
                                         </div>
                                         <div class="lis-absolute lis-right-20 lis-top-20">
                                             <div class="lis-post-meta border border-white text-white rounded lis-f-14">{{ \Carbon\Carbon::parse($event->date)->format('d/m/Y') }}</div>

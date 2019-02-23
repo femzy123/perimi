@@ -31,19 +31,21 @@
                                  'location' => true,
                                  'date' => false,
                                  'radius' => false,
-                                 'url' => '/listing'
+                                 'url' => '/search/listing',
+                                 'type' => 'listing'
 
                                  ])
                             @endcomponent
                         </div>
                         <div class="tab-pane fade" id="profile" role="tabpanel" aria-labelledby="profile-tab">
                             @component('components.search-form', [
-                              'categories' => $categories,
+                              'categories' => $eventcategories,
                               'search_btn' => 'Search Events',
                               'location' => true,
                               'date' => false,
                               'radius' => false,
-                              'url' =>'/event'
+                              'url' =>'/search/event',
+                              'type' => 'event'
 
                               ])
                             @endcomponent

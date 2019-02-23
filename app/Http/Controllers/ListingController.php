@@ -7,6 +7,7 @@ use App\Repositories\ListingRepository;
 use Illuminate\Databse\Eloquent\Model;
 use App\Listing;
 use App\Http\Requests\ListingRequest;
+use App\Http\Requests\SearchRequest;
 
 class ListingController extends Controller
 {
@@ -68,5 +69,12 @@ class ListingController extends Controller
 //        $request->session()->flash('status', 'Listing was sucessfully deleted.');
         return view('listing.index')->with('status', 'Listing was sucessfully deleted.');
 
+    }
+
+    public function search(SearchRequest $request)
+    {
+        $listings = $this->listing->search($request->validated());
+
+        return view('listings.index', compact('listings'));
     }
 }

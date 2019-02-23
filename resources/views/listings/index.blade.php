@@ -45,19 +45,17 @@
                             </div>
                         </div>
                         <div class="row mt-5">
-                            <p>{{ $listings }}</p>
-
                         @foreach($listings as $listing)
                                 <div class="col-12 col-xl-6 mb-xl-0 mb-5">
                                 <div class="card lis-brd-light text-center text-lg-left">
                                     <a href="/listings/{{ $listing->id }}">
-                                        <div class="lis-grediant  lis-relative grediant-tb-light2 modImage lis-radius rounded-top"> <img src="storage/{{ $listing->cover_image }}" alt="" class="cover_img img-fluid rounded-top w-100" /> </div>
+                                        <div class="lis-grediant  lis-relative grediant-tb-light2 modImage lis-radius rounded-top"> <img src="\storage\{{ $listing->cover_image }}" alt="" class="cover_img img-fluid rounded-top w-100" /> </div>
                                         <div class="lis-absolute lis-right-20 lis-top-20">
                                             <div class="lis-post-meta border border-white text-white rounded lis-f-14">Open</div>
                                         </div>
                                     </a>
                                     <div class="card-body pt-0">
-                                        <div class="media d-block d-lg-flex lis-relative"> <img src="storage/{{ $listing->logo }}" alt="" class="logo lis-mt-minus-15 img-fluid d-lg-flex mx-auto mr-lg-3 mb-4 mb-lg-0 border lis-border-width-2 rounded-circle border-white" width="80" />
+                                        <div class="media d-block d-lg-flex lis-relative"> <img src="\storage\{{ $listing->logo }}" alt="" class="logo lis-mt-minus-15 img-fluid d-lg-flex mx-auto mr-lg-3 mb-4 mb-lg-0 border lis-border-width-2 rounded-circle border-white" width="80" />
                                             <div class="media-body align-self-start mt-2">
                                                 <h6 class="mb-0 lis-font-weight-600"><A href="#" class="lis-dark">{{ $listing->name }}</A></h6> </div>
                                         </div>
